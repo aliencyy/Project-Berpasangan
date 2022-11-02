@@ -1,34 +1,33 @@
 public class Boneka extends PaketLaundry{
     @Override
     public String Paket1(){
-        return "mencuci";
+        return "Dry cleaning";
     }
 
     @Override
     public String Paket2() {
-        return "menggosok";
+        return "Vakum";
     }
 
     @Override
     public String Paket3() {
-        return "mencuci dan menggosok";
+        return "Dry cleaning dan Vakum";
     }
 
     @Override
     public double hargaPaket1() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 15.000;
     }
 
     @Override
     public double hargaPaket2() {
         // TODO Auto-generated method stub
-        return 0;
+        return 7.000;
     }
 
     @Override
     public double hargaPaket3() {
         // TODO Auto-generated method stub
-        return 0;
+        return 20.000;
     }
 }

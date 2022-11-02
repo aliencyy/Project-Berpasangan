@@ -1,36 +1,41 @@
 package Project_Berpasangan;
 
-public class Pakaian extends paketLaundry {
+/**
+ * CLass Pakaian merupakan
+ * @author Kelsy Amirah dan Najla Raihana Kamila
+ * @version 01-11-2022
+ */
+
+public class Pakaian extends PaketLaundry {
+    
     @Override
     public String Paket1(){
-        return "mencuci";
+        return "Mencuci";
     }
 
     @Override
     public String Paket2() {
-        return "menggosok";
+        return "Menggosok";
     }
 
     @Override
     public String Paket3() {
-        return "mencuci dan menggosok";
+        return "Mencuci dan menggosok";
     }
 
     @Override
     public double hargaPaket1() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 5.000;
     }
 
     @Override
     public double hargaPaket2() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 6.000;
     }
 
     @Override
     public double hargaPaket3() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 10.000;
     }
 }
+

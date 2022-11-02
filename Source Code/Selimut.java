@@ -23,13 +23,11 @@ public abstract class Selimut extends paketLaundry {
 
     @Override
     public double hargaPaket2() {
-        // TODO Auto-generated method stub
         return 10.000;
     }
 
     @Override
     public double hargaPaket3() {
-        // TODO Auto-generated method stub
         return 15.000;
     }
 }

@@ -1,37 +1,41 @@
 package Project_Berpasangan;
 
-public class tasSepatu extends paketLaundry {
+/**
+ * CLass TasSepatu merupakan
+ * @author Kelsy Amirah dan Najla Raihana Kamila
+ * @version 01-11-2022
+ */
+
+public class TasSepatu extends PaketLaundry{
     @Override
     public String Paket1(){
-        return "mencuci";
+        return "Dry cleaning";
     }
 
     @Override
     public String Paket2() {
-        return "menggosok";
+        return "Vakum";
     }
 
     @Override
     public String Paket3() {
-        return "mencuci dan menggosok";
+        return "Dry cleaning dan vakum";
     }
 
     @Override
     public double hargaPaket1() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 15.000;
     }
 
     @Override
     public double hargaPaket2() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 10.000;
     }
 
     @Override
     public double hargaPaket3() {
-        // TODO Auto-generated method stub
-        return 0;
+        return 20.000;
     }
     
 }
+

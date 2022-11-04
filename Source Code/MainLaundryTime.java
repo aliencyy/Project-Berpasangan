@@ -75,5 +75,48 @@ public class MainLaundryTime {
             }else{
                 System.out.println("Hanya ada 3 paket yang disediakan.");
             }
+         /**
+         * jasa Tas dan Sepatu
+         */
+        }else if(pilihanJasa == 3){
+            System.out.println("Anda memilih jasa Laundry Tas dan Sepatu");
+            /**
+             * Scanner untuk memilih paket 
+             */
+            System.out.print("Masukkan pilihan paket anda : ");
+            pilihanPaket = ldr.nextInt();
+            if(pilihanPaket == 1){
+                System.out.println("Anda memilih PAKET 1 (" + tasSepatu.Paket1() + ")");
+                System.out.print("\nMasukkan jumlah tas/sepatu anda (minimal 1 buah) : ");   
+            }else if(pilihanPaket == 2){
+                System.out.println("Anda memilih PAKET 2 (" + tasSepatu.Paket2() + ")");
+                System.out.print("\nMasukkan jumlah tas/sepatu anda (minimal 1 buah) : ");  
+            }else if(pilihanPaket == 3){
+                System.out.println("Anda memilih PAKET 3 (" + tasSepatu.Paket3() + ")");
+                System.out.print("\nMasukkan jumlah tas/sepatu anda (minimal 1 buah) : "); 
+            }
+        /**
+         * jasa Boneka
+         */
+        }else if(pilihanJasa == 4){
+            System.out.println("Anda memilih jasa Laundry Boneka");
+            /**
+             * Scanner untuk memilih paket 
+             */
+            System.out.print("Masukkan pilihan paket anda : ");
+            pilihanPaket = ldr.nextInt();
+            if(pilihanPaket == 1){
+                System.out.println("Anda memilih PAKET 1 (" + boneka.Paket1() + ")");
+                System.out.print("\nMasukkan jumlah boneka anda (minimal 1 buah) : ");   
+            }else if(pilihanPaket == 2){
+                System.out.println("Anda memilih PAKET 2 (" + boneka.Paket2() + ")");
+                System.out.print("\nMasukkan jumlah boneka anda (minimal 1 buah) : ");  
+            }else if(pilihanPaket == 3){
+                System.out.println("Anda memilih PAKET 3 (" + boneka.Paket2() + ")");
+                System.out.print("\nMasukkan jumlah boneka anda (minimal 1 buah) : "); 
+            }
+        }else {
+            System.out.println("Inputan anda invalid");
+        }
     }
 }

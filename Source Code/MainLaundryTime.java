@@ -25,7 +25,55 @@ public class MainLaundryTime {
         System.out.println("| Mencuci & Menggosok\t|   Mencuci & Menggosok\t|    Dry Cleaning & Vakum\t|    Dry Cleaning & Vakum    |");
         System.out.println("|   Harga: Rp10.000\t|     Harga: 15.000\t|\tHarga: 20.000\t\t|\tHarga: 20.000\t     |");
         System.out.println("+------------------------------------------------------------------------------------------------------------+");
-        System.out.print("Masukkan paket yang anda inginkan : ");
-        pilihan = ldr.nextInt();
+      
+        /**
+         * Scanner untuk memilih jasa laundry
+         */
+        System.out.print("Masukkan jasa yang anda inginkan : ");
+        pilihanJasa = ldr.nextInt();
+        /**
+         * jasa pakaian
+         */
+        if(pilihanJasa == 1){
+            System.out.print("Anda memilih jasa Laundry Pakaian");
+            /**
+             * Scanner untuk memilih paket 
+             */
+            System.out.print("Masukkan pilihan paket anda : ");
+            pilihanPaket = ldr.nextInt();
+            if(pilihanPaket == 1){
+                System.out.println("Anda memilih PAKET 1 (" + pakaian.Paket1() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");   
+            }else if(pilihanPaket == 2){
+                System.out.println("Anda memilih PAKET 2 (" + pakaian.Paket2() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");  
+            }else if(pilihanPaket == 3){
+                System.out.println("Anda memilih PAKET 3 (" + pakaian.Paket3() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : "); 
+            }else{
+                System.out.println("Hanya ada 3 paket yang disediakan.");
+            }
+          /**
+          * jasa selimut
+          */
+        }else if(pilihanJasa == 2){
+            System.out.println("Anda memilih jasa Laundry Selimut");
+            /**
+             * Scanner untuk memilih paket 
+             */
+            System.out.print("Masukkan pilihan paket anda : ");
+            pilihanPaket = ldr.nextInt();
+            if(pilihanPaket == 1){
+                System.out.println("Anda memilih PAKET 1 (" + selimut.Paket1() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");   
+            }else if(pilihanPaket == 2){
+                System.out.println("Anda memilih PAKET 2 (" + selimut.Paket2() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");  
+            }else if(pilihanPaket == 3){
+                System.out.println("Anda memilih PAKET 3 (" + selimut.Paket3() + ")");
+                System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : "); 
+            }else{
+                System.out.println("Hanya ada 3 paket yang disediakan.");
+            }
     }
 }

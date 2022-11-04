@@ -22,7 +22,7 @@ public class Boneka extends PaketLaundry{
     @Override
     public double hargaPaket2() {
         // TODO Auto-generated method stub
-        return 7.000;
+        return 10.000;
     }
 
     @Override

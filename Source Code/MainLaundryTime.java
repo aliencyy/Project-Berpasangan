@@ -159,5 +159,37 @@ public class MainLaundry {
         }else {
             System.out.println("Inputan anda invalid");
         }
+
+     /**
+     * Membuat inputan dari pelanggan 
+     */
+    System.out.print("\nMasukkan nama anda : ");
+    namaPelanggan = ldr.next();
+    
+    System.out.print("Masukkan nomor hp anda : ");
+    noHp = ldr.nextInt();
+
+    System.out.print("Masukkan alamat anda : ");
+    alamatPelanggan = ldr.next();
+
+    /** 
+    * Membuat struk untuk informasi pemesanan
+    */
+    // int total = 0;
+    // int uang;
+    // System.out.println("--------------------------------------\n");
+    // System.out.println("|          STRUK BELANJAAN           |\n");
+    // System.out.println("--------------------------------------\n");
+    //     System.out.println("\t\t\t      \n",pilihanJasa, pilihanPaket );
+    // System.out.println("======================================\n");
+    //     total += list[i].jumlah_harga;
+    //     System.out.println("Total \t\t\t\t\n",total);    
+    //     System.out.println("Uang  \t\t\t\t");    
+    // System.out.println("======================================\n");
+    // int temp;
+    // temp = uang - total;
+    // System.out.println("Kembalian    \t\t\t\n",temp);    
+    // }
+
     }
 }

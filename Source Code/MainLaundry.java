@@ -206,3 +206,15 @@ public class MainLaundry {
         System.out.println("| Anda memilih jasa " + pilihanJasa + " dengan berat/jumlah = " + jumlahItem + "kg/pcs  |");
         System.out.println("+----------------------------------------------------+");
         System.out.println("| Total harga\t\t\t:\t" + jumlahHarga + "\t     |");
+        System.out.print("| Uang yang dibayar\t\t:\t");
+        uang = ldr.nextDouble();
+        System.out.println("+----------------------------------------------------+");
+
+        double kembalian;
+        kembalian = uang - jumlahHarga;
+        System.out.println("| Kembalian\t\t\t:\t " + kembalian + "\t     |");
+        System.out.println("+----------------------------------------------------+");
+
+}
+}
+

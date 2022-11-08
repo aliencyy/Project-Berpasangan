@@ -224,3 +224,56 @@ public class MainLaundry {
         } while (Pesan);
 
     }
+
+        public static boolean LanjutMemesan(boolean pesan) {
+
+        // membuat object scanner
+        Scanner ldr = new Scanner(System.in);
+
+        // memilih ingin bermain lagi atau tidak
+        System.out.println("\n");
+        System.out.println("+----------------------------+");
+        System.out.println("| Apakah ingin memesan lagi? |");
+        System.out.println("|            Ya(Y)           |");
+        System.out.println("|            No(N)           |");
+        System.out.println("|+---------------------------+");
+        System.out.print("\nMasukkan pilihan anda : ");
+
+        String next;
+        do {
+            next = ldr.next();
+
+            if ("N".equalsIgnoreCase(next)) {
+                pesan = false;
+                break;
+            }
+            if ("Y".equalsIgnoreCase(next)) {
+                pesan = true;
+                break;
+            } else {
+                System.out.println("\nAnda salah menginput");
+                System.err.print("Silahkan masukkan inputan berupa (y/n) : ");
+                continue;
+            }
+        } while (pesan);
+
+        return pesan;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner enter = new Scanner(System.in);
+
+        boolean lanjut = true;
+
+        do {
+            MainLaundryTime();
+            lanjut = LanjutMemesan(lanjut);
+        } while (lanjut);
+
+        System.out.println("Tekan enter untuk keluar...");
+        enter.nextLine();
+        System.out.println("<===================---< TERIMAKASIH SUDAH MEMESAN >---===================>");
+
+    }
+}

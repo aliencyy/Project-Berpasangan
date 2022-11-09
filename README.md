@@ -6,6 +6,7 @@ Anggota (beserta username github) :
 - Najla Raihana Kamila (2108107010067) : najlarhana
 
 Topik   : Laundry
+
 Fenomena: Seorang pelanggan ingin memesan jasa laundry pakaian, selimut, sepatu dan boneka di laundry
 
 Link video presentasi : https://youtu.be/PEAFOa3S9pM

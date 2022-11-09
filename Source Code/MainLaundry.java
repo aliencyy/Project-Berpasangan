@@ -186,7 +186,7 @@ public class MainLaundry {
             /**
              * Membuat inputan dari pelanggan
              */
-            System.out.print("\nMasukkan nama anda   : ");
+            System.out.print("\nMasukkan nama anda     : ");
             namaPelanggan = ldr.next();
 
             System.out.print("Masukkan nomor hp anda : ");

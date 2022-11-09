@@ -8,9 +8,9 @@
 public abstract class PaketLaundry {
     
     // inisialisasi atribut
-    public abstract String Paket1(); // mencuci
-    public abstract String Paket2(); // menggosok
-    public abstract String Paket3(); // menggosok + mencuci
+    public abstract String Paket1();
+    public abstract String Paket2(); 
+    public abstract String Paket3(); 
 
     public abstract double hargaPaket1(); // harga paket 1
     public abstract double hargaPaket2(); // harga paket 2

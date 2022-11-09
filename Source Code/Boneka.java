@@ -1,6 +1,15 @@
-public class Boneka extends PaketLaundry{
+/**
+ * CLass Boneka merupakan class turunan dari PaketLaundry (class abstract)
+ * dimana class ini me-Override method dari class PaketLaundry
+ * 
+ * @author Kelsy Amirah dan Najla Raihana Kamila
+ * @version 08-11-2022
+ */
+
+public class Boneka extends PaketLaundry {
+
     @Override
-    public String Paket1(){
+    public String Paket1() {
         return "Dry cleaning";
     }
 
@@ -21,13 +30,11 @@ public class Boneka extends PaketLaundry{
 
     @Override
     public double hargaPaket2() {
-        // TODO Auto-generated method stub
-        return 10.000;
+        return 7.000;
     }
 
     @Override
     public double hargaPaket3() {
-        // TODO Auto-generated method stub
         return 20.000;
     }
 }

@@ -1,14 +1,15 @@
-package Project_Berpasangan;
-
 /**
- * CLass TasSepatu merupakan
+ * CLass Sepatu merupakan class turunan dari PaketLaundry (class abstract)
+ * dimana class ini me-Override method dari class PaketLaundry
+ * 
  * @author Kelsy Amirah dan Najla Raihana Kamila
- * @version 01-11-2022
+ * @version 08-11-2022
  */
 
-public class TasSepatu extends PaketLaundry{
+public class Sepatu extends PaketLaundry {
+    
     @Override
-    public String Paket1(){
+    public String Paket1() {
         return "Dry cleaning";
     }
 
@@ -36,6 +37,4 @@ public class TasSepatu extends PaketLaundry{
     public double hargaPaket3() {
         return 20.000;
     }
-    
 }
-

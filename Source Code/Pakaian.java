@@ -1,15 +1,15 @@
-package Project_Berpasangan;
-
 /**
- * CLass Pakaian merupakan
+ * CLass Pakaian merupakan class turunan dari PaketLaundry (class abstract)
+ * dimana class ini me-Override method dari class PaketLaundry
+ * 
  * @author Kelsy Amirah dan Najla Raihana Kamila
- * @version 01-11-2022
+ * @version 08-11-2022
  */
 
 public class Pakaian extends PaketLaundry {
-    
+
     @Override
-    public String Paket1(){
+    public String Paket1() {
         return "Mencuci";
     }
 
@@ -25,17 +25,16 @@ public class Pakaian extends PaketLaundry {
 
     @Override
     public double hargaPaket1() {
-        return 5.000;
+        return 4.000;
     }
 
     @Override
     public double hargaPaket2() {
-        return 6.000;
+        return 4.000;
     }
 
     @Override
     public double hargaPaket3() {
-        return 10.000;
+        return 6.000;
     }
 }
-

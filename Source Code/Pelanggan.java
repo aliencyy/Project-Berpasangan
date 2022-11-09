@@ -1,36 +1,38 @@
 /**
- * CLass Pelanggan merupakan class yang berisikan inputan dari pelanggan,
- * antara lain nama pelanggan, kode pelanggan, no hp pelanggan, dan alamat pelanggan
+ * Class Pelanggan adalah class yang digunakan untuk pelanggan di Laundry
+ * dimana class ini berisi nama pelanggan
+ * 
+ * @author Kelsy Amirah dan Najla Raihana Kamila
+ * @version 08-11-2022
  */
 
 public class Pelanggan {
-    
+
     // inisialisasi atribut
     private static String nama;
-    private static int kodePelanggan;
-    private static int noHp;
-    private static String alamat;
 
     /**
      * method constructor tanpa parameter
      */
-    public Pelanggan(){
+    public Pelanggan() {
 
     }
 
     /**
      * method mutator/setter
-     * @param nama
+     * 
+     * @param namaBaru
      */
-    public void setNama(String namaBaru){
-        this.nama = namaBaru;
+    public void setNama(String namabaru) {
+        this.nama = namabaru;
     }
 
     /**
      * method accessor/getter
+     * 
      * @return nama
      */
-    public String getNama(){
+    public String getNama() {
         return this.nama;
     }
 }

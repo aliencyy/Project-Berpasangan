@@ -7,7 +7,6 @@
 
 public abstract class PaketLaundry {
     
-    // inisialisasi atribut
     public abstract String Paket1();
     public abstract String Paket2(); 
     public abstract String Paket3(); 

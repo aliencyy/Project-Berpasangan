@@ -1,5 +1,5 @@
 /**
- * CLass PaketLaundry merupakan class abstract
+ * Class PaketLaundry merupakan class abstract
  * 
  * @author Kelsy Amirah dan Najla Raihana Kamila
  * @version 08-11-2022

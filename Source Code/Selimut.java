@@ -1,8 +1,15 @@
-package Project_Berpasangan;
+/**
+ * CLass Selimut merupakan class turunan dari PaketLaundry (class abstract)
+ * dimana class ini me-Override method dari class PaketLaundry
+ * 
+ * @author Kelsy Amirah dan Najla Raihana Kamila
+ * @version 08-11-2022
+ */
 
-public abstract class Selimut extends paketLaundry {
+public class Selimut extends PaketLaundry {
+    
     @Override
-    public String Paket1(){
+    public String Paket1() {
         return "Mencuci";
     }
 

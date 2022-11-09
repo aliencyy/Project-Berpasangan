@@ -5,4 +5,4 @@ Anggota (beserta username github) :
 - Kelsy Amirah (2108107010054) : aliencyy
 - Najla Raihana Kamila (2108107010067) : najlarhana
 
-Link video presentasi : (coming soon)
+Link video presentasi : https://youtu.be/PEAFOa3S9pM

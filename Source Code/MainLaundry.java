@@ -1,28 +1,34 @@
-package Project_Berpasangan;
 import java.util.Scanner;
 
 /**
  * Class MainLaundry adalah class untuk run program
  * 
  * @author Kelsy Amirah dan Najla Raihana Kamila
- * @version 01-11-2022
+ * @version 08-11-2022
  */
 
 public class MainLaundry {
 
+    /**
+     * Method MainLaundryTime merupakan method yang berisikan mekanisme dari Laundry
+     * dimana pada class ini pelanggan akan menginput pilihan jasa, pilihan paket,
+     * serta pada class ini juga akan menginput nama pelanggan, no hp pelanggan,
+     * dan alamat pelanggan, serta akan ditampilkan struk pesanan dari pelanggan
+     */
     public static void MainLaundryTime() {
         /**
-         * Inisialisasi variabel
+         * Inisialisasi atribut
          */
         int pilihanJasa;
         int pilihanPaket;
-        String namaPelanggan;
         int noHp;
-        String alamatPelanggan;
         int jumlahItem = 0;
+        String namaPelanggan;
+        String alamatPelanggan;
         double jumlahHarga = 0;
         boolean Pesan = true;
 
+        // membuat object Scanner
         Scanner ldr = new Scanner(System.in);
 
         /**
@@ -39,7 +45,7 @@ public class MainLaundry {
         System.out.println("\t\t\t\t ====================================");
         System.out.println("\nBerikut paket yang dapat dipilih");
         System.out.println("+------------------------------------------------------------------------------------------------------------+");
-        System.out.println("|\tPakaian\t\t|\tSelimut\t\t|\t    Sepatu\t\t|\t   Boneka   \t     |");
+        System.out.println("|\tPakaian\t\t|\tSelimut\t\t|\t   Sepatu\t\t|\t   Boneka   \t     |");
         System.out.println("+------------------------------------------------------------------------------------------------------------+");
         System.out.println("|      PAKET 1 \t\t|\tPAKET 1\t\t|\t   PAKET 1\t\t|\t   PAKET 1\t     |");
         System.out.println("|      Mencuci\t\t|\tMencuci\t\t|\t Dry Cleaning\t\t|\t Dry Cleaning\t     |");
@@ -55,18 +61,18 @@ public class MainLaundry {
         System.out.println("+------------------------------------------------------------------------------------------------------------+");
 
         /**
-         * Scanner untuk memilih jasa laundry
+         * Memilih jasa laundry
          */
         do {
             System.out.print("\nMasukkan jasa yang anda inginkan sesuai di menu (1/2/3/4): ");
             pilihanJasa = ldr.nextInt();
 
             /**
-             * jasa pakaian
+             * Jasa pakaian
              */
-
             if (pilihanJasa == 1) {
                 System.out.print("Anda memilih jasa Laundry Pakaian\n");
+                
                 /**
                  * Scanner untuk memilih paket
                  */
@@ -77,25 +83,23 @@ public class MainLaundry {
                     System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = pakaian.hargaPaket1() * jumlahItem;
-                    
                 } else if (pilihanPaket == 2) {
                     System.out.println("Anda memilih PAKET 2 (" + pakaian.Paket2() + ")");
                     System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = pakaian.hargaPaket2() * jumlahItem;
-                    
                 } else if (pilihanPaket == 3) {
                     System.out.println("Anda memilih PAKET 3 (" + pakaian.Paket3() + ")");
                     System.out.print("\nMasukkan berat pakaian anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = pakaian.hargaPaket3() * jumlahItem;
-                    
                 } else {
                     System.out.println("Hanya ada 3 paket yang disediakan.");
                     continue;
                 }
             } else if (pilihanJasa == 2) {
                 System.out.println("Anda memilih jasa Laundry Selimut\n");
+                
                 /**
                  * Scanner untuk memilih paket
                  */
@@ -106,25 +110,23 @@ public class MainLaundry {
                     System.out.print("\nMasukkan berat selimut anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = selimut.hargaPaket1() * jumlahItem;
-                    
                 } else if (pilihanPaket == 2) {
                     System.out.println("Anda memilih PAKET 2 (" + selimut.Paket2() + ")");
                     System.out.print("\nMasukkan berat selimut anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = selimut.hargaPaket2() * jumlahItem;
-                    
                 } else if (pilihanPaket == 3) {
                     System.out.println("Anda memilih PAKET 3 (" + selimut.Paket3() + ")");
                     System.out.print("\nMasukkan berat selimut anda (minimal 1 kg) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = selimut.hargaPaket3() * jumlahItem;
-                    
                 } else {
                     System.out.println("Hanya ada 3 paket yang disediakan.");
                     continue;
                 }
             } else if (pilihanJasa == 3) {
                 System.out.println("Anda memilih jasa Laundry Sepatu\n");
+                
                 /**
                  * Scanner untuk memilih paket
                  */
@@ -135,25 +137,23 @@ public class MainLaundry {
                     System.out.print("\nMasukkan jumlah sepatu anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = sepatu.hargaPaket1() * jumlahItem;
-                    
                 } else if (pilihanPaket == 2) {
                     System.out.println("Anda memilih PAKET 2 (" + sepatu.Paket2() + ")");
                     System.out.print("\nMasukkan jumlah sepatu anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = sepatu.hargaPaket2() * jumlahItem;
-                    
                 } else if (pilihanPaket == 3) {
                     System.out.println("Anda memilih PAKET 3 (" + sepatu.Paket3() + ")");
-                    System.out.print("\nMasukkan jumlah sepatu anda (minimal 1 item) : ");
+                    System.out.print("\nMasukkan berat sepatu anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = sepatu.hargaPaket3() * jumlahItem;
-                    
                 } else {
                     System.out.println("Hanya ada 3 paket yang disediakan.");
                     continue;
                 }
             } else if (pilihanJasa == 4) {
                 System.out.println("Anda memilih jasa Laundry Boneka\n");
+                
                 /**
                  * Scanner untuk memilih paket
                  */
@@ -164,19 +164,16 @@ public class MainLaundry {
                     System.out.print("\nMasukkan jumlah boneka anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = boneka.hargaPaket1() * jumlahItem;
-                    
                 } else if (pilihanPaket == 2) {
                     System.out.println("Anda memilih PAKET 2 (" + boneka.Paket2() + ")");
                     System.out.print("\nMasukkan jumlah boneka anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = boneka.hargaPaket2() * jumlahItem;
-                    
                 } else if (pilihanPaket == 3) {
                     System.out.println("Anda memilih PAKET 3 (" + boneka.Paket3() + ")");
                     System.out.print("\nMasukkan jumlah boneka anda (minimal 1 item) : ");
                     jumlahItem = ldr.nextInt();
                     jumlahHarga = boneka.hargaPaket3() * jumlahItem;
-                    
                 } else if (pilihanPaket > 3) {
                     System.out.println("Hanya ada 3 paket yang disediakan.");
                     continue;
@@ -189,7 +186,7 @@ public class MainLaundry {
             /**
              * Membuat inputan dari pelanggan
              */
-            System.out.print("\nMasukkan nama anda     : ");
+            System.out.print("\nMasukkan nama anda   : ");
             namaPelanggan = ldr.next();
 
             System.out.print("Masukkan nomor hp anda : ");
@@ -208,7 +205,7 @@ public class MainLaundry {
             System.out.println("+-----------------------------------------------------+");
             System.out.println("|                   STRUK BELANJAAN                   |");
             System.out.println("+-----------------------------------------------------+");
-            System.out.println("| Anda memilih jasa " + pilihanJasa + " dengan berat/jumlah = " + jumlahItem + " kg/pcs  |");
+            System.out.println("| Anda memilih jasa " + pilihanJasa + " dengan berat/jumlah = "+ jumlahItem + " kg/pcs  |");
             System.out.println("+-----------------------------------------------------+");
             System.out.println("| Total harga\t\t\t:\t" + jumlahHarga + "\t      |");
             System.out.print("| Uang yang dibayar\t\t:\t");
@@ -225,12 +222,16 @@ public class MainLaundry {
 
     }
 
-        public static boolean LanjutMemesan(boolean pesan) {
+    /**
+     * method LanjutMemesan digunakan untuk memilih ingin memesan lagi atau tidak
+     * @return pesan
+     */
+    public static boolean LanjutMemesan(boolean pesan) {
 
         // membuat object scanner
         Scanner ldr = new Scanner(System.in);
 
-        // memilih ingin bermain lagi atau tidak
+        // memilih ingin memesan lagi atau tidak
         System.out.println("\n");
         System.out.println("+----------------------------+");
         System.out.println("| Apakah ingin memesan lagi? |");
@@ -260,6 +261,10 @@ public class MainLaundry {
         return pesan;
     }
 
+    /**
+     * fungsi main dari program menampilkan menu awal hingga menu akhir pemesanan
+     * @param args
+     */
     public static void main(String[] args) {
 
         Scanner enter = new Scanner(System.in);
